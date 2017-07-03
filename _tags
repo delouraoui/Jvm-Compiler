@@ -1,0 +1,11 @@
+true : use_unix
+
+<src>           : include
+<src/common>    : include
+<src/utilities> : include
+<src/fopix>     : include
+<src/anfix>     : include
+<src/javix>     : include
+<src/jakix>     : include
+<src/kontix>    : include
+<src/lib/pprint> : include

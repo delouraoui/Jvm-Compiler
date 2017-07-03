@@ -1,0 +1,7 @@
+def fact(K,E,x) = if x = 0 then K(1,E) else
+ fact(&aux,[K,E,x],x-1)
+ end
+def aux(r,[K,E,n]) =
+ K(r*n,e)
+eval fact(K,E,10) /* K,E: initial continuation and env */
+/* answer: 3628800 */

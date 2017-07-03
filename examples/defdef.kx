@@ -1,0 +1,11 @@
+def f(K,E,x) =
+  if x=0 then
+    kont1(1,[&kont0,[K,E]])
+  else
+    f(&kont1,[&kont0,[K,E]],x-1)
+  end
+def kont0(res,[K,E]) =
+  K(res+2,E)
+def kont1(res,[K,E]) =
+  K(res+1,E)
+eval f(K,E,3)  /* resultat: 13 */
